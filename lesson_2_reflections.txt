@@ -5,19 +5,35 @@ A new file is created called .git. This file will save the history of the reposi
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-The staging area conceptually lies in between the working directory and the repository. It allows us to 
-decide which files to commit, instead of having to commit all the files in the working directory.
+The staging area conceptually lies in between the working directory and the repository. 
+It allows us to decide which files to commit, instead of having to commit all the files
+in the working directory.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+By only adding the file which has been changed.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+If I wanted to create a different version of my program or run an experiment. 
+Each branch would keep a history of the commits for each version.
+
 How do the diagrams help you visualize the branch structure?
+
+They help me understand the branch structure better since I can see it.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+
+The result is a file(s) that reflects the changes made to the original file(s)
+by the commits from both branches. The checked out branch's log reflects the commits 
+from both branches.
+
+It is represented that way in the diagram because it is the comming together
+of the two branches.
+
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
