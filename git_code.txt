@@ -1,0 +1,39 @@
+git clone "URL" (to copy a repository from a website eg. GitHub)
+
+git log 
+git log --graph (displays the graph of the logs)
+git log --graph --oneline (displays the log graph on one line)     
+
+git diff "first_id" "second_id" (compares two commits)
+git diff (compares working directory to stage area) - REMEMBER: Stage area contains both added files and untracked files. So if you made a change to a file in the working directory, the file in the working directory would be different to the untracked file (how it recently was before you made the change)
+git diff --staged (compares file ADDED to stage area to commit1)
+
+git checkout "commit_id" (to resort to a previous commit repository)
+git checkout master (resorts to the most recent commit)
+git checkout "branch_name" (changes branches)
+
+git init (initialises a git repository)
+git status (tells you the status of the repository)
+
+git add "file_name" (adds file to the staging area)
+git reset "file_name" (removes file from the staging area)
+git commit (commits files in the staging area)
+
+git brach (lists the branches)
+git branch "branch_name" (creates a new branch)
+git branch -d "branch_name" (deletes the branch. d stands for delete)
+
+git merge "checked_out_branch" "other_branch" (merges the other_branch with the checked_out_branch. The changes will be present in the checked_out_branch, but not the other_branch)
+
+git remote (lists remote repositories)
+git remote -v ("v" stands for verbose: lists remote repositories, plus their details)
+git remote add "name_of_remote_repository" "Github_URL" (creates a repository (called a remote repository) which commits to a repository on Github. If you only have one remote repository, call it "origin".)
+
+git push "name_of_remote_repository" "name_of_branch" (pushes the branch to the remote repository on a site like GitHub)
+
+git show "commit_id" (shows you the diff between the referenced commit and its parent commit (commit before it))
+
+Git Message Titles should be written as commands eg. "Add lesson 1 and lesson 2 reflections". Not "Adds" or "Added"
+and should not have a full stop.     
+
+                                                    
