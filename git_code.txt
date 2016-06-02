@@ -27,9 +27,16 @@ git merge "checked_out_branch" "other_branch" (merges the other_branch with the 
 
 git remote (lists remote repositories)
 git remote -v ("v" stands for verbose: lists remote repositories, plus their details)
-git remote add "name_of_remote_repository" "Github_URL" (creates a repository (called a remote repository) which commits to a repository on Github. If you only have one remote repository, call it "origin".)
+git remote add "name_of_remote_repository" "Github_URL" (creates a local remote repository which commits to a repository on Github. If you only have one local remote repository, call it "origin".)
 
-git push "name_of_remote_repository" "name_of_branch" (pushes the branch to the remote repository on a site like GitHub)
+git push "name_of_remote_repository" "name_of_branch" (pushes the local branch to the remote repository on a site like GitHub)
+git pull "name_of_remote_repository" "name_of_branch" (pulls the remote repository on a site like GitHub to the local branch)
+
+git fetch "name_of_remote_repository" (if the local repository and GitHub are out of sync, this command will update all the respective branches of the remote repository with the out of sync GitHub commit(s) eg. "origin/master")
+	eg. git pull origin master = 	git fetch origin
+					git merge master origin/master 
+	
+	*see git_fetch_concept.jpg for illustration
 
 git show "commit_id" (shows you the diff between the referenced commit and its parent commit (commit before it))
 
