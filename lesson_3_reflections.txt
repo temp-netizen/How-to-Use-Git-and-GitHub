@@ -39,4 +39,6 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    If I'm collaborating and I want to make changes to the code.
+    Doing this will allow the other person to view my commit before merging it
+    into the master branch.
