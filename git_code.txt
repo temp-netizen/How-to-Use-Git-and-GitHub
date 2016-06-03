@@ -43,4 +43,7 @@ git show "commit_id" (shows you the diff between the referenced commit and its p
 Git Message Titles should be written as commands eg. "Add lesson 1 and lesson 2 reflections". Not "Adds" or "Added"
 and should not have a full stop.     
 
+A fast-forward merge can only happen if the branch you want to merge into (b) is a parent of the branch you want to merge (a)  ie * <- *a <- * <- *b
+You don't get a merge commit with a fast-forward merge.
+
                                                     
