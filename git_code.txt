@@ -23,7 +23,7 @@ git brach (lists the branches)
 git branch "branch_name" (creates a new branch)
 git branch -d "branch_name" (deletes the branch. d stands for delete)
 
-git merge "checked_out_branch" "other_branch" (merges the other_branch with the checked_out_branch. The changes will be present in the checked_out_branch, but not the other_branch)
+git merge "other_branch" "checked_out_branch" (merges the other_branch into the checked_out_branch. The changes will be present in the checked_out_branch, but not the other_branch)
 
 git remote (lists remote repositories)
 git remote -v ("v" stands for verbose: lists remote repositories, plus their details)
